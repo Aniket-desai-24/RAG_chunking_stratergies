@@ -1,0 +1,49 @@
+# ─────────────────────────────────────────────────────────────
+# RAG Chunking Strategies — Python Dependencies
+# ─────────────────────────────────────────────────────────────
+#
+# Core (needed for most strategies — no API key required)
+# ─────────────────────────────────────────────────────────────
+nltk>=3.8            # Sentence tokenisation  (s02, s05, s10)
+numpy>=1.24          # Cosine similarity      (s05)
+
+# ─────────────────────────────────────────────────────────────
+# Optional — improve accuracy / add format support
+# ─────────────────────────────────────────────────────────────
+
+# Better sentence splitting than NLTK  (s02 spacy backend)
+# spacy>=3.7
+# Run after install: python -m spacy download en_core_web_sm
+
+# Token-aware splitting (same tokenizer as OpenAI models)  (s01)
+tiktoken>=0.6
+
+# LangChain recursive splitter  (s04 — alternative to built-in class)
+# langchain-text-splitters>=0.2
+
+# Local embeddings — NO API KEY needed  (s05)
+sentence-transformers>=2.7
+
+# HTML document parsing  (s06)
+beautifulsoup4>=4.12
+lxml>=5.0            # Faster HTML parser for BeautifulSoup
+
+# PDF document parsing  (s06)
+# pymupdf>=1.24       # pip install pymupdf
+
+# Word document parsing  (s06)
+# python-docx>=1.1    # pip install python-docx
+
+# ─────────────────────────────────────────────────────────────
+# Cloud API clients  (s05 OpenAI backend, s07 proposition chunking)
+# Set API keys in your .env file — see .env.example
+# ─────────────────────────────────────────────────────────────
+
+# OpenAI (GPT-4o-mini for propositions, text-embedding-3-small)
+# openai>=1.30
+
+# Anthropic Claude (claude-haiku for propositions)
+# anthropic>=0.28
+
+# python-dotenv — load .env automatically
+python-dotenv>=1.0
