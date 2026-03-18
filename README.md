@@ -5,7 +5,7 @@ A complete, runnable reference for **10 text chunking strategies** used in Retri
 Each strategy comes with:
 - ✅ A clean, well-commented Python implementation
 - 📚 Inline theory (when to use it, pros/cons, key parameters)
-- 🖥️ An interactive HTML masterclass (`visualizer/index.html`)
+- 🖥️ An interactive HTML masterclass (`docs/index.html`)
 
 ---
 
@@ -26,7 +26,7 @@ rag-chunking-strategies/
 │   └── s10_hierarchical.py
 ├── examples/
 │   └── run_all.py              # One-shot demo of all strategies
-├── visualizer/
+├── docs/                 
 │   └── index.html              # Interactive theory + code masterclass
 ├── .env.example                # API key template (copy → .env)
 ├── requirements.txt
@@ -255,7 +255,7 @@ chunker.print_tree()  # Debug the full hierarchy
 
 ## 🌐 Interactive Visualizer
 
-Open `visualizer/index.html` in any browser for a full interactive masterclass with:
+Open `docs/index.html` in any browser for a full interactive masterclass with:
 - Theory explanation for each strategy
 - Colour-coded visual of how text is split
 - Copyable code for every strategy
